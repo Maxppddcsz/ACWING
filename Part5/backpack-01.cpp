@@ -48,3 +48,27 @@ int main()
     cout << f[n][m] << endl;
     return 0;
 }
+
+/*
+优化:转化为一维数组 f(i)只用到了f(i-1)
+int f[N];
+int main()
+{
+    scanf("%d%d", &n, &m);
+    for (int i = 1; i <= n; i++)
+    {
+        cin >> v[i] >> w[i];
+    }
+
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = m; j >= v[i]; j--)
+        {
+            f[j] = max(f[j], f[j - v[i]] + w[i]);
+        }
+    }
+    cout << f[n][m] << endl;
+    return 0;
+}
+
+*/
