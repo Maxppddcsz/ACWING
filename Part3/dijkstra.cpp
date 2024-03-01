@@ -3,9 +3,10 @@
 单个点到其他点的最短距离
 1.dist[1] = 0 dist[i] = INF
   S:已确定最短距离的点
-2.for i:0-n
+2.for i:1-n
     t <- 不在S中的距离最近的点
     s <- t
+<<<<<<< HEAD
     用 t 更新其他点的距离：dist[x] >？dist[t]+w
 */
 
@@ -66,3 +67,7 @@ int main()
 
     return 0;
 }
+=======
+    用 t 更新其他点的距离：dist[x] >？dist[t]+w(权重)
+*/
+>>>>>>> 375db2e85bd08f554552396dd61e7ffa393204ac
