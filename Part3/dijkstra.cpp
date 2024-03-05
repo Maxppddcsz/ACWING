@@ -67,7 +67,3 @@ int main()
 
     return 0;
 }
-=======
-    用 t 更新其他点的距离：dist[x] >？dist[t]+w(权重)
-*/
->>>>>>> 375db2e85bd08f554552396dd61e7ffa393204ac
