@@ -1,3 +1,4 @@
+// 原问题等价于将差分数组 b 全部变为 0 的最少次数
 #include <iostream>
 #include <algorithm>
 
@@ -11,10 +12,10 @@ int b[N];
 int k[N];
 int n;
 
-void insert(int l, int r, int c)
+void insert(int l, int r)
 {
-    b[l] += c;
-    b[r + 1] -= c;
+    b[l] += 1;
+    b[r + 1] -= 1;
 }
 
 int main()
@@ -23,14 +24,25 @@ int main()
     for (int i = 1; i <= n; i++)
     {
         scanf("%d", &p[i]);
-        b[i] = p[i] - p[i - 1];
     }
 
     for (int i = 1; i <= n; i++)
     {
         scanf("%d", &t[i]);
         k[i] = p[i] - t[i];
+        b[i] = k[i] - k[i - 1];
     }
+
+    int s = 0, t = 0;
+    for (int i = 1; i <= n; i++)
+    {
+        if (b[i] > 0)
+            s += b[i];
+        else if (b[i] < 0)
+            t -= b[i];
+    }
+
+    printf("%d\n", max(s, t));
 
     return 0;
 }

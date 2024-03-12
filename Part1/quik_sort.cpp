@@ -4,7 +4,7 @@ const int N = 1e6 + 10;
 int q[N];
 void quik_sort(int q[], int l, int r)
 {
-    int x = q[l], i = l - 1, j = r + 1;
+    int x = q[l + r >> 1], i = l - 1, j = r + 1;
     if (l >= r) // 边界
         return;
     while (i < j) // 双指针，交换

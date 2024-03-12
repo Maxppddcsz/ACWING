@@ -3,7 +3,8 @@
         "*.c": "c",
         "iostream": "cpp",
         "algorithm": "cpp",
-        "cstring": "cpp"
+        "cstring": "cpp",
+        "limits": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
