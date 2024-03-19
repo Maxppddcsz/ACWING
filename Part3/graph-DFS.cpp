@@ -11,7 +11,7 @@ const int N = 1e5 + 10; // 数据范围是10的5次方
 const int M = 2 * N;    // 以有向图的格式存储无向图，所以每个节点至多对应2n-2条边
 
 int idx = 0;
-int h[N], e[M], ne[M];
+int h[N], e[M], ne[M]; // h 数组为索引存储（单链表头结点），e 数组为节点数值存储，ne 数组为下一个结点索引存储
 int n, m;
 int st[N];
 
