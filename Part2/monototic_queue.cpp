@@ -5,6 +5,8 @@ using namespace std;
 /*
 滑动窗口：单调队列
 只要队列里存在ax<=ay,x>y,就删掉前面的,获得单调
+
+窗口里极值 离元素最近/最大的数
 */
 const int N = 1e6 + 10;
 
