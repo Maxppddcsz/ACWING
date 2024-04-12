@@ -32,7 +32,8 @@ void dfs(int u)
 }
 int main()
 {
-    cin >> n;
+    // cin >> n;
+    n=5;
     dfs(0);
     return 0;
 }

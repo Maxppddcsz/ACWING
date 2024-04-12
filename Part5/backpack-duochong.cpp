@@ -66,7 +66,7 @@ int main()
     n = cnt;
     for (int i = 1; i <= n; i++)
     {
-        for (int i = m; j >= v[j]; j--)
+        for (int j = m; j >= v[j]; j--)
             f[j] = max(f[j], f[j - v[i]] + w[i]);
     }
 }

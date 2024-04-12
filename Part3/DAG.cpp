@@ -36,7 +36,7 @@ bool topsort()
     for (int i = 0; i < n; i++)
     {
         if (!d[i])
-            q[++t] = i;
+            q[++tt] = i;
     }
 
     while (hh <= tt)
