@@ -18,7 +18,6 @@ void quik_sort(int q[], int l, int r)
         if (i < j)
             swap(q[i], q[j]);
     }
-
     quik_sort(q, l, j); // 递归
     quik_sort(q, j + 1, r);
 }
